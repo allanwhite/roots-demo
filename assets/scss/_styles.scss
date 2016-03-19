@@ -1,0 +1,20 @@
+//  SASS variables: https://gist.githubusercontent.com/allanwhite/6ec845a76c4959680209/raw/sass-boilerplate.scss
+.full-width {max-width: 100%;}
+header {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+body {
+    & > header, & > section {
+      margin-bottom: 3em;
+    }
+    &.demo {
+        img { // hey this is just wireframing, knock those images back
+          opacity: 0.7;
+          filter: grayscale(100%);
+          &.cap-height {
+            max-height: 5em;
+          }
+        }
+    }
+}

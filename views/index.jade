@@ -1,0 +1,134 @@
+extends layout
+
+block content
+    h3 Welcome to roots!
+    :marked
+        Find tutorials and documentation at http://roots.cx : )
+    
+    - var pangrams = ['How quickly daft jumping zebras vex.', 'Two driven jocks help fax my big quiz.', '"Now fax quiz Jack!" my brave ghost pled.', 'Jack, love my big wad of sphinx quartz!', 'Do wafting zephyrs quickly vex Jumbo?', 'Go, lazy fat vixen; be shrewd, jump quick.', 'Fickle jinx bog dwarves spy math quiz.', 'Big dwarves heckle my top quiz of jinx.', 'Fickle bog dwarves jinx empathy quiz.', 'Public junk dwarves hug my quartz fox.', 'Jumping hay dwarves flock quartz box.']
+    - var catAsset = '//catalyze.io/assets/'
+    header.row.full-width#top
+        .column.text-center
+            h1 Stratum is the compliance layer powering healthcare's transformation
+            p.lead Modern digital health innovators use Stratum as their HITRUST CSF Certified platform
+            aside
+                img(src= catAsset + "/img/stratum-header/stratum-masthead-snapshot.png" alt="")
+    section#compliance
+        .row
+            .columns.small-12.text-center
+                h2 HITRUST CSF Certified Infrastructure
+                p.lead Catalyze's HITRUST CSF Certification gives you industry credibility overnight
+        .row
+            .columns.medium-6.small-12.small-order-1.medium-order-2
+                img.cap-height(src="https://catalyze.io/assets/img/HITRUST2015.png" alt="hitrust logo")
+            .columns.medium-6.small-12.small-order-2.medium-order-1
+                p Catalyze has led the industry with its HIPAA compliant platform. Stratum is HITRUST CSF Certified, achieving the greatest industry privacy and security standards, which means customers can confidently trust Catalyze to provide this higher level of compliance.
+        .row
+            .columns.medium-6.small-12
+                h3 We take compliance seriously.
+                p Stratum is built with information security and compliance at its core. Our policies, procedures, and technology go above and beyond HIPAA compliance to ensure our users' data, and their users' data, is secure. We take HIPAA compliance seriously because we believe it is the right thing to do.
+                img.cap-height(src='https://catalyze.io/assets/img/compliance-hhs-nist-stratum.png', alt='HHS and NIST Sanctioned')
+            .columns.medium-6.small-12
+                h3 Our leaders are industry leaders.
+                p The founding team at Catalyze is made up of industry luminaries. From conference keynotes to panel discussions to guest content contributions to industry regulatory body participation, our executive team is recognized as an authoritative voice on HIPAA and compliance.
+                p Sitting at the heart of the HIPAA conversation provides Catalyze with a unique and powerful grasp on how to best achieve compliance in a rapidly changing technology landscape. It's this benefit that propels our vision forward.
+        .row
+            .column.text-center
+                a.button.secondary(href="https://catalyze.io/compliance/hitrust" title="Read our compliance story") Read about our compliance story
+    section#benefits
+        .row
+            .column.text-center
+                h2 Focus on your core competency
+                p.lead Stratum alleviates the burden of compliance so you can continue to do what you do best
+        .row.medium-unstack
+            .columns
+                img(src='https://catalyze.io/assets/img/icon-gears-circle.svg')
+                h3 We become your healthcare-focused DevOps team
+                p everage our experience and expertise in healthcare technology to add value to your organization. You can put all your energy towards your innovative ideas—the thing that actually matters.
+            .columns
+                img(src='https://catalyze.io/assets/img/icon-hands-circle.svg')
+                h3 Concentrate on the relationships that matter
+                p Stratum immediately establishes credibility between the players who matter in healthcare. Health systems and vendors alike can work more freely together to innovate.
+            .columns
+                img(src='https://catalyze.io/assets/img/icon-lightbulb-circle.svg')
+                h3 Spend energy and resources on innovation, not compliance
+                p Achieving Triple Aim goals is the mandate for healthcare. We're all in this together, but it's only going to happen if you can concentrate on the innovations that get us there.
+    section
+        header.text-center
+            h2 Benefits that liberate your organization
+        .row
+            .columns.small-12.medium-6
+                img(src=catAsset + 'img/icon-wings.svg')
+                h3 Zero lock-in
+                p Stratum has zero lock-in. We support open standards. You own your code, your relationships, your business, your freedom.
+            .columns.small-12.medium-6
+                img(src=catAsset + 'img/icon-harddrive-flag.svg')
+                h3 You own your data
+                p The data belongs to you. You own it and can take it with you. We’re trusted stewards to you, the customer, and your data.
+            .columns.small-12.medium-6
+                img(src=catAsset + 'img/icon-baa.svg')
+                h3 Single Business Associate Agreement
+                p Our single, publicly-available BAA means you are covered at the infrastructure level with only one relationship to manage.
+            .columns.small-12.medium-6
+                img(src=catAsset + 'img/icon-sla-support.svg')
+                h3 Enterprise-grade service
+                p Trust is cultural at Catalyze: Support is how we establish it with you. Enterprise-level SLAs available upon request.
+    section#technology
+        header.row
+            .column.text-center
+                h2 Stratum supports mature tech stacks
+        .row
+            .columns.small-12.medium-6
+                h3 Modern open source languages
+                p Use the language which best fits your application. Stratum doesn't limit you to proprietary languages or a single option.
+                img.cap-height(src='https://catalyze.io/assets/img/technology-langs.png', alt='Ruby, Node, PHP, Java, Python, Go support')
+            .columns.small-12.medium-6
+                h3 Support for leading databases
+                p Pick your preference. Stratum handles the latest leading database technologies, and automatically configures them to be compliant.
+                img.cap-height(src='https://catalyze.io/assets/img/technology-dbs.png', alt='Postgres, MySQL, Percona, MongoDB support')
+            .columns.small-12.medium-6
+                h3 The utilities you want
+                p From workers to caching, Stratum gives you the flexibility to configure your environments your way with useful add-ons.
+                img.cap-height(src='https://catalyze.io/assets/img/technology-utilities.png', alt='Redis, Memcached, RabbitMQ support')
+            .columns.small-12.medium-6
+                h3 Flexible deployments
+                p Use our buildpacks with a simple git-push process, or configure your own process with mature tools. It's your choice.
+                img.cap-height(src='https://catalyze.io/assets/img/technology-deployments.png', alt='Chef, Puppet, Capistrano support')
+        .row
+            .column
+                #featured-img
+                    img#featured-dashboard.show-for-medium(src='https://catalyze.io/assets/img/stratum-dashboard-desktop@2x.png', alt='Stratum optimized for desktop')
+                    //- #featured-phone.intro.intro-right
+                    //-     img(src='https://catalyze.io/assets/img/stratum-dashboard-mobile@2x.png', alt='Stratum optimized for mobile')
+                    //- #featured-cli.intro.intro-left
+                    //-     img(src='https://catalyze.io/assets/img/stratum-dashboard-cli@2x.png', alt='Stratum as a Command Line Interface')
+        .row
+            .column.text-center
+                h2 The experience you deserve, with a full suite of tools available at your fingertips. 
+                p.lead Stratum's dashboard makes building apps engaging and fun.
+        .row
+            .columns.small-12.large-6
+                img(src='https://catalyze.io/assets/img/icon-mobile-globe.svg')
+                h3 Optimized for web and mobile
+                p
+                    | Stratum's dashboard is designed for the best experience on both web and mobile platforms.
+            .columns.small-12.large-6
+                img(src='https://catalyze.io/assets/img/icon-cli-prompt.svg')
+                h3 Command Line Interface
+                p
+                    | The Stratum CLI gives engineers access to the control they need within the tools they are used to.
+
+    section#benefits
+        .row
+            .column.text-center
+                h1 Trusted by leading innovative organizations
+                p.lead
+        .row
+            .columns.medium-6
+                img.cap-height(src='https://catalyze.io/assets/img/customer-logos/healthloop-logo.png', alt='HealthLoop trusts Catalyze')
+                p HealthLoop chose Catalyze to remove the necessity of becoming...
+                a.button(href='https://catalyze.io/customers/cordata') View case study
+            .columns.medium-6
+                img.cap-height(src='https://catalyze.io/assets/img/customer-logos/cordata-logo.png', alt='Cordata trusts Catalyze')
+                p Cordata leaned on Catalyze's expertise and HITRUST CSF Certification
+                a.button(href='https://catalyze.io/customers/cordata') View case study

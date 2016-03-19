@@ -1,0 +1,18 @@
+doctype html
+html
+
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='A demo of the Roots CMS.')
+    meta(name='author', content= "Catalyze.io team")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation-flex.min.css", rel="stylesheet prefetch", crossorigin="anonymous")
+    link(src="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,700,700italic,400italic,600,600italic", rel="stylesheet", type="text/css")
+    title= _path
+    != css()
+
+  body
+    block content
+
+    != js()
